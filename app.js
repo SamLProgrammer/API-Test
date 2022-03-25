@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
             })
 
         }, (error) => {
-            console.log(error);
+            console.log('error: ' + error);
         });
 
 })
