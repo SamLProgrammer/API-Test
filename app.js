@@ -5,6 +5,7 @@ const app = express();
 
 app.get('/', (req, res) => {
 
+    req.setTimeout(100000);
     const json_object = { user: 'user', password: '123' }
 
     axios.post('https://job-manager-xb5oq.ondigitalocean.app/auth/login', json_object)
