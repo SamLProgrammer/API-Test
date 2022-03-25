@@ -6,7 +6,7 @@ const app = express();
 app.get('/', (req, res) => {
 
     const json_object = { user: 'user', password: '123' }
-    res.send(json_object)
+    res.send('ola morzita')
     // axios.post('https://job-manager-xb5oq.ondigitalocean.app/auth/login', json_object)
     //     .then((response) => {
 
