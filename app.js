@@ -8,8 +8,8 @@ app.use(cors());
 
 app.get('/', (req, res) => {
 
-    const json_object = { user: 'user', password: '123' }
-    axios.post('https://job-manager-xb5oq.ondigitalocean.app/auth/login', json_object)
+    const jsonObject = { user: 'user', password: '123' }
+    axios.post('https://job-manager-xb5oq.ondigitalocean.app/auth/login', jsonObject)
         .then((response) => {
 
             axios.get('https://job-manager-xb5oq.ondigitalocean.app/auth/check-auth', {
