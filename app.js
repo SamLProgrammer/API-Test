@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
                 }
             }).then((nested_response) => {
                 console.log(nested_response.data)
-                res.send(nested_response)
+                res.send(nested_response.data)
             })
 
         }, (error) => {
